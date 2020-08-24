@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "RBold";
+    src: url("../fonts/Raleway-Bold.woff2") format("woff2"), url("../fonts/Raleway-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "RLight";
+    src: url("../fonts/Raleway-Light.woff2") format("woff2"), url("../fonts/Raleway-Light.woff") format("woff");
+}

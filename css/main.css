@@ -1,0 +1,214 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: RBold;
+    font-size: 14px;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+.questions {
+	margin: 7.8% 12.5%;
+	position: relative;
+}
+
+.questions .broccoli {
+	background: url("../images/broccoli_img.png") no-repeat;
+	height: 813px;
+	width: 858px;
+	transform: scale(0.66);
+	position: absolute;
+	left: 240px;
+	top: -13px;
+}
+
+.questions h1, h2 {
+	text-transform: uppercase;
+	text-align: center; 
+	margin-right: 19%;
+}
+
+.questions h1 {
+	color: #F6F6F6;
+	font-size: 86px;
+	padding-top: 6px;
+}
+
+.questions h2 {
+	font-size: 18px;
+	padding-top: 20px;
+	letter-spacing: 1px;
+	padding-left:6px;
+	
+}
+
+.questions .five {
+	margin-top:52px;
+	position: relative;
+}
+
+.questions .five .block {
+	margin:24px 0;
+	position: relative;
+	
+}
+
+.questions .five .block input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.questions .five .block label {
+  position: relative;
+  display: block;
+  padding: 18px 66px;
+  cursor: pointer;
+  background: url("../icons/plus_one7.png") no-repeat;
+
+}
+
+
+
+.question-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .40s;
+  font-family: RLight;
+  line-height: 19px;
+  width: 50%;
+  cursor: pointer;
+}
+
+.question-content p {
+  margin: 15px 0 0 66px;
+}
+
+.question-content p span {
+	font-weight: bold;
+	color: #ff3f84;
+}
+
+/* .questions .five .block label:hover {
+  background: url("../icons/plus_two7.png") no-repeat -3px -3px;
+} */
+
+.five .block input:checked ~ .question-content {
+  max-height: 100vh;
+  margin-bottom:45px;
+}
+
+.five .block input:checked + label, .questions .five .block label:active {
+  background: url("../icons/plus_three7.png") no-repeat;
+}
+
+@media (max-width: 1123px) {
+	.questions {
+	margin: 5% 8%;
+	}
+	
+}
+
+@media (max-width: 1071px) {
+	.questions {
+	margin: 5%;
+	}
+	
+	.questions .broccoli {
+	width: 643px;
+	transform: scale(0.6);
+	/* left: 240px;
+	top: -13px; */
+}
+
+@media (max-width: 873px) {
+	.questions {
+	margin: 3%;
+	}
+	
+	.questions .broccoli {
+	transform: scale(0.4);
+	left: 300px;
+	top: -45%;
+	width: 660px;
+	}
+.questions h1 {
+	padding-top: 15%;
+	}
+}
+
+@media (max-width: 866px) {
+	.questions .broccoli {
+	left: 200px;
+	top: -35%;
+	}
+.questions h1 {
+	padding-top: 30%;
+	}
+}
+
+@media (max-width: 743px) {
+	.questions .broccoli {
+	left: 80px;
+	top: -43%;
+	transform: scale(0.3);
+	}
+.questions h1 {
+	padding-top: 30%;
+	}
+}
+
+@media (max-width: 711px) {
+	.questions .broccoli {
+	left: 0;
+	top: -44%;
+	}
+.questions h1 {
+	padding-top: 30%;
+	}
+}
+
+@media (max-width: 673px) {
+	.questions .broccoli {
+	left: 0;
+	top: -44%;
+	}
+.questions h1 {
+	padding-top: 35%;
+	}
+}
+
+@media (max-width: 585px) {
+	.questions .broccoli {
+	left: 0;
+	top: -40%;
+	}
+.questions h1 {
+	padding-top: 45%;
+	}
+}
+
+@media (max-width: 513px) {
+	.questions .broccoli {
+	left: 0;
+	top: -40%;
+	}
+.questions h1 {
+	padding-top: 50%;
+	font-size: 66px;
+	}
+}
+
+@media (max-width: 480px) {
+	.questions .broccoli {
+	left: -20%;
+	top: -40%;
+	}
+.questions h1 {
+	padding-top: 55%;
+
+	}
+}
+
